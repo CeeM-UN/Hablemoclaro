@@ -49,3 +49,13 @@
     font-weight: lighter;
     font-size: 1.2em; /* Ajusta el tamaño de la fuente a 1.2em */
   }
+
+  .cuerpo-blog{
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 35%;
+    height: 100vh;
+    width: 100%;
+    
+  }
