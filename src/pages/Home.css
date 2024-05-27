@@ -40,7 +40,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 100px; /* Ajusta esto al tamaño que prefieras */
+  font-size: 3.5rem; /* Ajusta esto al tamaño que prefieras */
   z-index: 3;
   font-family: 'PT Serif', serif;
   font-weight: bold;
@@ -51,11 +51,12 @@
     left: 0;
     width: 100%;
     height: 100%;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #536566;
-    font-size: 100px; /* Ajusta esto al tamaño que prefieras */
+    font-size: 3.5rem; /* Ajusta esto al tamaño que prefieras */
     z-index: 3;
     font-family: 'PT Serif', serif;
     font-weight: bold;
@@ -82,10 +83,6 @@
   padding: 3% 10%; /* Aumenta el padding vertical a 50px y mantiene el padding horizontal en 20px */
   font-weight: lighter;
   font-size: 1.2em; /* Ajusta el tamaño de la fuente a 1.2em */
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-
 }
   .text-container2 {
     font-family: 'PT Serif', serif;
@@ -125,72 +122,13 @@
     height: auto;
     width: 100%;
     
+    
   }
 
   .flecha{
-    width: 5%;
-    height: 5%;
+    width: 9%;
+    height: 9%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 2%;
   }
-
-  .tablita{  
-  width: 50%;
-  margin: auto;
-  border-collapse: collapse;
-  }
-
-  th, td {
-    font-family: 'Open Sans', sans-serif;
-    padding: 10px;
-    text-align: left;
-    border: 1px solid black;
-    color: black;
-    font-size: 1em; 
-
-  }
-  .tc{
-    width: 55%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: white;
-    box-shadow: black;
-}
-h1 {
-    text-align: center;
-}
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.tip {
-    margin-bottom: 20px;
-    text-align: justify;
-   border-top: 0.5px solid #5b6f70 ;
-   
-   
-}
-.tip h3 {
-    margin: 0 0 10px;
-}
-
-.tip p {
-  font-weight: lighter;
-  font-size: 1; /* Ajusta el tamaño de la fuente a 1.2em */
-  font-family: 'Open Sans', sans-serif; /* Cambia la fuente a Open Sans */
-}

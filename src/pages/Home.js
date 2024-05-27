@@ -3,6 +3,7 @@ import './Home.css';
 import logo from '../Images/imagenlogo.png'; // Importa la imagen del logo aquí
 import background from '../Images/17ib2g.png'
 import imagen from '../Images/fondo-home.jpg';
+import '../Images/imagen-home-2.png';
 
 function Home() {
   return (
@@ -24,12 +25,14 @@ function Home() {
       <div className="blank"></div> {/* Línea centrada debajo del texto */}
       <button className="button">Para continuar viendo la historia de Emoti da click aquí!</button> {/* Botón centrado */}
     </div>
-    <div className="centered-text1">¡Esto te va a interesar!
-    
-    </div>
+    <div className="background-container">
+  <div className="centered-text1">¡Esto te va a interesar!</div>
+</div>
 
     </div>
-  );
-}
+
+    );
+    }
+
 
 export default Home;
