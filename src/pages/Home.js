@@ -17,10 +17,18 @@ function Home() {
 
     </div>
     <div className="cuerpo-blog" style={{ backgroundImage: `url(${imagen})` }}>
-    <h1>mete aqui lo que este en el negro</h1>
+      <div className="text-container2">Emoti y sus desenfrenadas emociones</div> {/* Nuevo elemento */}
+      <div className="contact-line"></div> {/* Línea centrada debajo del texto */}
+      <div className="blank"></div> {/* Línea centrada debajo del texto */}
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9SlTy3yARaQ?si=wURIlTxF7_6ciPw2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div className="blank"></div> {/* Línea centrada debajo del texto */}
+      <button className="button">Para continuar viendo la historia de Emoti da click aquí!</button> {/* Botón centrado */}
     </div>
-      
-  </div>
+    <div className="centered-text1">¡Esto te va a interesar!
+    
+    </div>
+
+    </div>
   );
 }
 
