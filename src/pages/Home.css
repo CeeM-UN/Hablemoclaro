@@ -46,15 +46,71 @@
   font-weight: bold;
     /* el resto de tus estilos */
   }
-
-  .text-container {
-    font-family: 'Open Sans', sans-serif; /* Cambia la fuente a Open Sans */
-    color: #888888; /* Cambia el color a #888888 */
-    text-align: center; /* Centra el texto */
-    padding: 50px 20px; /* Aumenta el padding vertical a 50px y mantiene el padding horizontal en 20px */
-    font-weight: lighter;
-    font-size: 1.2em; /* Ajusta el tamaño de la fuente a 1.2em */
+  .centered-text1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #536566;
+    font-size: 100px; /* Ajusta esto al tamaño que prefieras */
+    z-index: 3;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+      /* el resto de tus estilos */
+    }
+  .contact-line {
+    width: 100px;
+    height: 3.5px;
+    background-color: #00ccff;
+    margin: 7px auto;
   }
+
+  .blank {
+    width: 100px;
+    height: 3.5px;
+    background-color: #00ccff00;
+    margin: 30px auto;
+  }
+
+.text-container {
+  font-family: 'Open Sans', sans-serif; /* Cambia la fuente a Open Sans */
+  color: #888888; /* Cambia el color a #888888 */
+  text-align: center; /* Centra el texto */
+  padding: 3% 10%; /* Aumenta el padding vertical a 50px y mantiene el padding horizontal en 20px */
+  font-weight: lighter;
+  font-size: 1.2em; /* Ajusta el tamaño de la fuente a 1.2em */
+}
+  .text-container2 {
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    color: #ffffff; /* Cambia el color a #888888 */
+    text-align: center; /* Centra el texto */
+    padding: 15px 5px; /* Aumenta el padding vertical a 50px y mantiene el padding horizontal en 20px */
+    font-size: 1.8em; /* Ajusta el tamaño de la fuente a 1.2em */
+  }
+
+  .button {
+    background-color: white; /* Fondo blanco */
+    border-radius: 12px; /* Esquinas redondeadas */
+    border: none; /* Elimina el borde predeterminado */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    text-align: center; /* Centra el texto */
+    text-decoration: none; /* Elimina el subrayado */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-bottom:50px;
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-family: 'Open Sans', sans-serif; /* Cambia la fuente a Open Sans */
+    color: #888888;
+
+
+  }
+
+
 
 
   .cuerpo-blog{
@@ -64,6 +120,7 @@
     background-size: 35%;
     height: auto;
     width: 100%;
+    
     
   }
 
