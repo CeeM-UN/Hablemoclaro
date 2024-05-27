@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+
 import logo from '../Images/Reconociendo_emociones_banner.png'; // Importa la imagen del logo aquí
 import background from '../Images/17ib2g.png';
 import flecha_fondo from '../Images/22dpwz.png';
