@@ -28,9 +28,10 @@ function App() {
         <nav>
           <ul style={{ display: 'flex', gap: '10px' }}>
             <li><Link to="/">inicio</Link></li>
-            <li><Link to="/nuestro-escenario">Nuestro Escenario</Link></li>
             <li><Link to="/reconociendo-emociones">Reconociendo Emociones</Link></li>
             <li><Link to="/rincon-ocio">Rincón de Ocio</Link></li>
+            <li><Link to="/nuestro-escenario">Nuestro Escenario</Link></li>
+
           </ul>
         </nav>
       
@@ -38,10 +39,11 @@ function App() {
 
     {/* Aquí es donde se renderizarán tus componentes de página */}
     <Route path="/" exact component={Home} />
-    <Route path="/nuestro-escenario" component={NuestroEscenario} />
     <Route path="/reconociendo-emociones" component={ReconociendoEmociones} />
     <Route path="/rincon-ocio" component={RinconOcio} />
+    <Route path="/nuestro-escenario" component={NuestroEscenario} />
   </div>
+
 </Router> 
   );
 }
