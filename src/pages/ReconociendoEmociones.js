@@ -14,8 +14,9 @@ function Home() {
       </div>
   
     <div className="cuerpo-blog" style={{ backgroundImage: `url(${background})` }}>
-      <div className="text-container">Sabemos que en la adolescencia se experimentan cambios físicos, cognitivos y emocionales significativos. Reconocer y comprender tus propias emociones, así como las de los demás, es crucial para su desarrollo emocional saludable.</div> {/* Nuevo elemento */}
-    <div className="text-container">Te dejamos varios tips que te pueden ayudar, no solo en el entorno escolar sino que en cualquier entorno.</div>
+      <div className="text-container"><p>Sabemos que en la adolescencia se experimentan cambios físicos, cognitivos y emocionales significativos. Reconocer y comprender tus propias emociones, así como las de los demás, es crucial para su desarrollo emocional saludable.</p>
+       <p>Te dejamos varios tips que te pueden ayudar, no solo en el entorno escolar sino que en cualquier entorno.</p>
+       </div> {/* Nuevo elemento */}
     <img src={flecha_fondo} alt="flecha" className="flecha" />
     <table border="0" className='tablita'>
      <tr>
@@ -28,15 +29,20 @@ function Home() {
      </tr>
     </table>
     </div>  
-<div className="cuerpo-blog" style={{ backgroundImage: `url(${imagen})` }}>
-<h1>hola</h1>
-</div>
+<div className="cuerpo-blogn" style={{ backgroundImage: `url(${imagen})` }}>
+<div className="text-container2">Emoti y sus desenfrenadas emociones</div> {/* Nuevo elemento */}
+      <div className="contact-line"></div> {/* Línea centrada debajo del texto */}
+      <p>Parte II</p>
+      <div className="blank"></div> {/* Línea centrada debajo del texto */}
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wQEVrlGGZOE?si=DeNUM8whT0sPxLKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div className="blank"></div> {/* Línea centrada debajo del texto */}
+      <button className="button">Para continuar viendo la historia de Emoti da click aquí!</button> {/* Botón centrado */}
 <div className="cuerpo-blog" style={{ backgroundImage: `url(${background})` }}>
 <div class="container">
         <h1>Consejos para el manejo de emociones y el reconocimiento de las mismas</h1>
         <div class="clearfix">
             <div class="column">
-                <div class="tip">
+                <div class="tip1">
                     <h3>1. Atención Plena</h3>
                     <p>Práctica de la atención plena o mindfulness. Esta técnica puede ayudar a estar presentes en el momento actual y a tomar conciencia de sus pensamientos y emociones sin sentirse juzgado.</p>
                 </div>
@@ -54,7 +60,7 @@ function Home() {
                 </div>
             </div>
             <div class="column">
-                <div class="tip">
+                <div class="tip1">
                     <h3>5. Pausas antes de reaccionar</h3>
                     <p>Es importante tomar una pausa antes de reaccionar ante una situación emocionalmente cargada. Animarse a tomarse un momento para respirar profundamente y reflexionar sobre tus emociones antes de responder puede ayudarte a evitar reacciones impulsivas.</p>
                 </div>
@@ -74,6 +80,9 @@ function Home() {
         </div>
     </div>
 </div>
+<div className='footer'><p>© 2024 Proyecto USTA. Luna Nicolle Corpus Gomez - Vannesa Ortega - Yulixa Yuliana Ruiz Rubio.</p><p>Universidad Santo Tomás, Estudiantes de Comunicación Social</p>
+ </div>
+    </div>
     </div>
   );
 }

@@ -17,7 +17,7 @@ function Home() {
       <div className="text-container">Las emociones son los colores que pintan el lienzo de nuestra experiencia humana. Desde la euforia de la felicidad hasta la melancolía de la tristeza, cada emoción teje una narrativa única en el tapiz de nuestras vidas. En este viaje intrincado a través del laberinto de las emociones, exploraremos las profundidades de nuestro mundo interno y descubriremos la riqueza que yace dentro de cada sentimiento.</div> {/* Nuevo elemento */}
 
     </div>
-    <div className="cuerpo-blog" style={{ backgroundImage: `url(${imagen})` }}>
+    <div className="cuerpo-blogn" style={{ backgroundImage: `url(${imagen})` }}>
       <div className="text-container2">Emoti y sus desenfrenadas emociones</div> {/* Nuevo elemento */}
       <div className="contact-line"></div> {/* Línea centrada debajo del texto */}
       <div className="blank"></div> {/* Línea centrada debajo del texto */}
