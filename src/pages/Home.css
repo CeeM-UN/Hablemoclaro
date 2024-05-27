@@ -228,5 +228,10 @@ h1 {
   padding-top: 1%;
   text-align: center;
   color: #ffffff;
-  font-size: 0.6em;
+  font-size: 0.75em;
+}
+
+.barra-navegacion{
+  font-size: 0.77em;
+  color: #596b6c;
 }

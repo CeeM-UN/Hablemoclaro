@@ -37,6 +37,7 @@ function Home() {
       <iframe width="560" height="315" src="https://www.youtube.com/embed/wQEVrlGGZOE?si=DeNUM8whT0sPxLKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <div className="blank"></div> {/* Línea centrada debajo del texto */}
       <button className="button">Para continuar viendo la historia de Emoti da click aquí!</button> {/* Botón centrado */}
+      </div>
 <div className="cuerpo-blog" style={{ backgroundImage: `url(${background})` }}>
 <div class="container">
         <h1>Consejos para el manejo de emociones y el reconocimiento de las mismas</h1>
@@ -80,10 +81,8 @@ function Home() {
         </div>
     </div>
 </div>
-<div className='footer'><p>© 2024 Proyecto USTA. Luna Nicolle Corpus Gomez - Vannesa Ortega - Yulixa Yuliana Ruiz Rubio.</p><p>Universidad Santo Tomás, Estudiantes de Comunicación Social</p>
- </div>
     </div>
-    </div>
+    
   );
 }
 
