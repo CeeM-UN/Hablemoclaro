@@ -1,7 +1,8 @@
 import React from 'react';
 import './Home.css';
 import logo from '../Images/Reconociendo_emociones_banner.png'; // Importa la imagen del logo aquí
-import background from '../Images/17ib2g.png'
+import background from '../Images/17ib2g.png';
+import flecha_fondo from '../Images/22dpwz.png';
 
 function Home() {
   return (
@@ -10,10 +11,10 @@ function Home() {
         <img src={logo} alt="Imagen reconociendo emociones" className="blog-image" />
         <div className="centered-text">Reconociendo Emociones </div>
       </div>
-      
     <div className="cuerpo-blog" style={{ backgroundImage: `url(${background})` }}>
       <div className="text-container">Sabemos que en la adolescencia se experimentan cambios físicos, cognitivos y emocionales significativos. Reconocer y comprender tus propias emociones, así como las de los demás, es crucial para su desarrollo emocional saludable.</div> {/* Nuevo elemento */}
     <div className="text-container">Te dejamos varios tips que te pueden ayudar, no solo en el entorno escolar sino que en cualquier entorno.</div>
+    <div><img scr={flecha_fondo} alt="imagen flecha" className="blog-image" /></div>
     </div>
     </div>
   );
