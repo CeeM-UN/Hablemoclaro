@@ -42,9 +42,9 @@ function App() {
 
     {/* Aquí es donde se renderizarán tus componentes de página */}
     <Route path="/" exact component={Home} />
-    <Route path="/nuestro-escenario" component={NuestroEscenario} />
     <Route path="/reconociendo-emociones" component={ReconociendoEmociones} />
     <Route path="/rincon-ocio" component={RinconOcio} />
+    <Route path="/nuestro-escenario" component={NuestroEscenario} />
   </div>
   <footer>
     <div className="cuerpo-blog" style={{ backgroundImage: `url(${imagen})` }}>

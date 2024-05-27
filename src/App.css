@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metropolis&display=swap');
 
+
 /* Estilos generales de la aplicación */
 .App {
   text-align: center;
@@ -20,12 +21,13 @@
 
 /* Estilos del encabezado */
 .App-header {
+  padding-inline: 20px;
+  box-sizing: border-box;
   background-color: #ffffff;
   min-height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px; 
   font-size: 1rem;
   color: white;
   font-family: 'Metropolis', sans-serif;
@@ -33,6 +35,30 @@
   width: 100%;
 }
 
+.background-container {
+  position: relative;
+  overflow: hidden; /* Esto asegura que el desenfoque no se desborde fuera del contenedor */
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./Images/imagen-home-2.png'); /* Ruta corregida */
+  filter: blur(2px);
+  z-index: -1;
+}
+
+.background-image {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
 /* Estilos del logo */
 .logo {
   max-width: 100px;
