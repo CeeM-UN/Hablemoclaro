@@ -3,7 +3,7 @@ import './Home.css';
 import logo from '../Images/Reconociendo_emociones_banner.png'; // Importa la imagen del logo aquí
 import background from '../Images/17ib2g.png';
 import flecha_fondo from '../Images/22dpwz.png';
-import tc from '../Images/t-c.png';
+import imagen from '../Images/fondo-home.jpg';
 
 function Home() {
   return (
@@ -19,17 +19,20 @@ function Home() {
     <img src={flecha_fondo} alt="flecha" className="flecha" />
     <table border="0" className='tablita'>
      <tr>
-      <td><h2>Relaciones Interpersonales</h2>La habilidad de reconocer y comprender las emociones de los demás facilita las relaciones interpersonales positivas. Las personas que son capaces de identificar las emociones de sus compañeros pueden establecer relaciones más sólidas y empáticas</td>
-      <td><h2>Resolucion de Conflictos</h2>El reconocimiento de emociones es esencial para resolver conflictos de manera constructiva. Las personas que pueden identificar y expresar sus emociones de manera adecuada tienen más probabilidades de encontrar soluciones pacíficas a los conflictos interpersonales.</td>
+      <td><h2>Relaciones Interpersonales</h2><p>La habilidad de reconocer y comprender las emociones de los demás facilita las relaciones interpersonales positivas. Las personas que son capaces de identificar las emociones de sus compañeros pueden establecer relaciones más sólidas y empáticas.</p></td>
+      <td><h2>Resolucion de Conflictos</h2><p>El reconocimiento de emociones es esencial para resolver conflictos de manera constructiva. Las personas que pueden identificar y expresar sus emociones de manera adecuada tienen más probabilidades de encontrar soluciones pacíficas a los conflictos interpersonales.</p></td>
      </tr>
      <tr>
-      <td><h2>Bienestar Mental</h2>La capacidad de reconocer y gestionar las emociones está estrechamente relacionada con el bienestar mental. Las personas que son conscientes de sus propias emociones y saben cómo manejarlas tienen menos probabilidades de experimentar problemas de salud mental como la ansiedad y la depresión. </td>
-      <td><h2>Rendimiento Acádemico</h2>Las emociones juegan un papel importante en el rendimiento académico de los estudiantes. Los adolescentes que son capaces de regular sus emociones tienen más probabilidades de mantenerse enfocados y motivados en sus estudios, lo que puede conducir a un mejor desempeño académico. </td>
+      <td><h2>Bienestar Mental</h2><p>La capacidad de reconocer y gestionar las emociones está estrechamente relacionada con el bienestar mental. Las personas que son conscientes de sus propias emociones y saben cómo manejarlas tienen menos probabilidades de experimentar problemas de salud mental como la ansiedad y la depresión.</p></td>
+      <td><h2>Rendimiento Acádemico</h2><p>Las emociones juegan un papel importante en el rendimiento académico de los estudiantes. Los adolescentes que son capaces de regular sus emociones tienen más probabilidades de mantenerse enfocados y motivados en sus estudios, lo que puede conducir a un mejor desempeño académico.</p></td>
      </tr>
     </table>
-    </div>
-    <div className="cuerpo-blog" style={{ backgroundImage: `url(${background})` }}>
-    <div class="container">
+    </div>  
+<div className="cuerpo-blog" style={{ backgroundImage: `url(${imagen})` }}>
+<h1>hola</h1>
+</div>
+<div className="cuerpo-blog" style={{ backgroundImage: `url(${background})` }}>
+<div class="container">
         <h1>Consejos para el manejo de emociones y el reconocimiento de las mismas</h1>
         <div class="clearfix">
             <div class="column">
@@ -70,10 +73,8 @@ function Home() {
             </div>
         </div>
     </div>
-
+</div>
     </div>
-    </div>
-    
   );
 }
 
