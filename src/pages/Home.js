@@ -4,6 +4,9 @@ import logo from '../Images/imagenlogo.png'; // Importa la imagen del logo aquí
 import background from '../Images/17ib2g.png'
 import imagen from '../Images/fondo-home.jpg';
 import '../Images/imagen-home-2.png';
+import rosado from '../Images/monstritorosa.png';
+import rojo from '../Images/monstritorojo.png';
+import arcoiris from '../Images/monstrito arcoiris.png';
 
 function Home() {
   return (
@@ -28,6 +31,30 @@ function Home() {
     <div className="background-container">
   <div className="centered-text1">¡Esto te va a interesar!</div>
 </div>
+
+
+{/*referencia para no perderme */}
+
+<div className="cuerpo-blog" style={{ backgroundImage: `url(${background})` }}>
+        <div class="container-nuestroescenario">
+
+        <div class="section-nuestroescenario">
+            <img src={rosado} alt="video diario" className="imagenes-inicio"></img>
+            <h2>Podcast</h2>
+            <div className="contact-line2"></div>
+        </div>
+        <div class="section-nuestroescenario">
+        <img src={arcoiris} alt="valle miniatura" className="imagenes-inicio" ></img>
+            <h2>Música</h2>
+            <div className="contact-line2"></div>
+        </div>
+        <div class="section-nuestroescenario">
+        <img src={rojo} alt="fotogaleria" className="imagenes-inicio"></img>
+            <h2>Nuestro escenario</h2>
+            <div className="contact-line2"></div>
+        </div>
+        </div>
+      </div>
 
     </div>
 
