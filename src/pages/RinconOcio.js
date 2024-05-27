@@ -18,31 +18,32 @@ function Home() {
         </div>
         <div class="container-ocio">
         <div class="section-ocio">
-            <div class="icon-ocio"><img src={pacman} alt="micro" className="iconos"></img></div>
+            <div class="icon-ocio"><img src={pacman} alt="pacman" className="iconos"></img></div>
             <h2>Mundo Arcade</h2>
-            <p>Descubre un mundo de entretenimiento sin límites en nuestra sección de juegos! Aquí encontrarás variedad de juegos para todas las edades y gustos.</p>
+            <p>¡Descubre un mundo de entretenimiento sin límites en nuestra sección de juegos! Aquí encontrarás variedad de juegos para todas las edades y gustos</p>
         </div>
         <div class="section-ocio">
-            <div class="icon-ocio"><img src={musica} alt="micro" className="iconos"></img></div>
+            <div class="icon-ocio"><img src={musica} alt="musica" className="iconos"></img></div>
             <h2>Notas Mágicas</h2>
-            <p>La música tiene un poder único para transformar nuestras emociones y transportarnos a un estado de relajación profunda...</p>
+            <p>La música tiene un poder único para transformar nuestras emociones y transportarnos a un estado de relajación profunda. En esta sección, hemos seleccionado cuidadosamente una variedad de melodías suaves y armoniosas que te invitarán a desconectar del estrés diario y a conectarte contigo mismo. </p>
         </div>
         <div class="section-ocio">
-            <div class="icon-ocio"><img src={movie} alt="micro" className="iconos"></img></div>
+            <div class="icon-ocio"><img src={movie} alt="movie" className="iconos"></img></div>
             <h2>MovieManía</h2>
-            <p>En nuestra sección de películas, te invitamos a explorar una colección seleccionada de películas que promueven el respeto...</p>
+            <p>En nuestra sección de películas, te invitamos a explorar una colección seleccionada de películas que promueven el respeto, la empatía, la comprensión entre las personas y el manejo de las emociones. Estas historias inspiradoras no solo entretienen, sino que también transmiten valiosas lecciones sobre la importancia del respeto en nuestras vidas.</p>
         </div>
         <div class="section-ocio">
-            <div class="icon-ocio"><img src={book} alt="micro" className="iconos"></img></div>
+            <div class="icon-ocio"><img src={book} alt="ocio" className="iconos"></img></div>
             <h2>Jardín Literario</h2>
-            <p>En esta sección, te invitamos a descubrir una colección de libros seleccionados que promueven valores esenciales...</p>
+            <p>En esta sección, te invitamos a descubrir una colección de libros seleccionados que promueven valores esenciales como el respeto y el manejo de las emociones. Estas lecturas no solo te entretendrán, sino que también te ofrecerán valiosas lecciones y herramientas para enriquecer tu vida emocional y tus relaciones con los demás.</p>
         </div>
-        <div class="section-ocio">
+        
+    </div>
+    <div class="section-ocio2">
             <div class="icon-ocio"><img src={micro} alt="micro" className="iconos"></img></div>
             <h2>Valle de Charlas</h2>
             <p>Te invitamos a explorar nuestra colección de podcasts dedicados a fomentar el respeto y el manejo de las emociones. En un mundo donde las interacciones diarias pueden ser desafiantes, estos podcasts ofrecen herramientas y perspectivas valiosas para ayudarte a navegar las complejidades emocionales de la vida y cultivar relaciones más respetuosas y empáticas.</p>
         </div>
-    </div>
       </div>
     </div>
   );
