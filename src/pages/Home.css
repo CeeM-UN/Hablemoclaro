@@ -63,7 +63,7 @@
     }
   .contact-line {
     width: 100px;
-    height: 3.5px;
+    height: 1px;
     background-color: #00ccff;
     margin: 7px auto;
   }
@@ -121,12 +121,27 @@
     background-repeat: repeat;
     background-size: cover;
     background-position: center;
+    background-size: 15%;
+    height: auto;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+
+  .cuerpo-blogn{
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
     background-size: 35%;
     height: auto;
     width: 100%;
-    
+    padding-bottom: 5%;
   }
 
+  .cuerpo-blogn p{
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 1.5em;
+  }
   .flecha{
     width: 5%;
     height: 5%;
@@ -140,16 +155,24 @@
   width: 50%;
   margin: auto;
   border-collapse: collapse;
+  
   }
 
   th, td {
     font-family: 'Open Sans', sans-serif;
     padding: 10px;
     text-align: left;
-    border: 1px solid black;
+   
     color: black;
     font-size: 1em; 
-
+  }
+  td h2{
+    color: #596b6c;
+  }
+  td p{
+    color: #7a7a7a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em; 
   }
   .tc{
     width: 55%;
@@ -163,9 +186,11 @@
     margin: 0 auto;
     background-color: white;
     box-shadow: black;
+    margin-top: 20px;
 }
 h1 {
     text-align: center;
+    padding-top: 20px;
 }
 .column {
     float: left;
@@ -182,15 +207,26 @@ h1 {
     margin-bottom: 20px;
     text-align: justify;
    border-top: 0.5px solid #5b6f70 ;
-   
-   
 }
-.tip h3 {
-    margin: 0 0 10px;
+.tip1 {
+  margin-bottom: 20px;
+  text-align: justify;
+
+}
+.tip h3, .tip1 h3 {
+    color: #596b6c;
 }
 
-.tip p {
+.tip p , .tip1 p {
   font-weight: lighter;
-  font-size: 1; /* Ajusta el tamaño de la fuente a 1.2em */
+  font-size: 0.85em; /* Ajusta el tamaño de la fuente a 1.2em */
   font-family: 'Open Sans', sans-serif; /* Cambia la fuente a Open Sans */
+  color: #7a7a7a;
+}
+
+.footer{
+  padding-top: 1%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.6em;
 }
