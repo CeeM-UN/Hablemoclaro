@@ -21,6 +21,8 @@
 
 /* Estilos del encabezado */
 .App-header {
+  position: sticky;
+  top: 0;
   padding-inline: 20px;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -28,12 +30,33 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1rem;
+  font-size: calc(1.5vw);
   color: white;
   font-family: 'Metropolis', sans-serif;
   font-weight: bold;
   width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
+
+/* Cuando el ancho de la ventana del navegador es 600px o menos, aumenta el tamaño de la fuente */
+@media (max-width: 600px) {
+  .App-header {
+    font-size: calc(2vw);
+  }
+}
+
+
+.barra-navegacion li {
+  transition: all 0.3s ease; /* Asegura una transición suave */
+}
+
+.barra-navegacion li:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del texto en un 10% cuando el mouse está sobre él */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade una sombra debajo del texto */
+}
+
+
 
 .background-container {
   position: relative;

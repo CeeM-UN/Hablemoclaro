@@ -47,8 +47,6 @@
     /* el resto de tus estilos */
   }
   .centered-text1 {
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     padding: 50px;
@@ -56,12 +54,20 @@
     justify-content: center;
     align-items: center;
     color: #536566;
-    font-size: 3.5rem; /* Ajusta esto al tamaño que prefieras */
+    font-size: 3.5rem;
     z-index: 3;
     font-family: 'PT Serif', serif;
     font-weight: bold;
-      /* el resto de tus estilos */
-    }
+    opacity: 0; /* Inicia la animación con el texto invisible */
+    animation: fadeIn 2s ease-in-out forwards; /* Aplica la animación de fade in */
+    margin: auto; /* Centra el texto */
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
   .contact-line {
     width: 100px;
     height: 1px;
@@ -102,22 +108,27 @@
   }
 
   .button {
-    background-color: white; /* Fondo blanco */
-    border-radius: 12px; /* Esquinas redondeadas */
-    border: none; /* Elimina el borde predeterminado */
-    padding: 10px 20px; /* Espacio alrededor del texto */
-    text-align: center; /* Centra el texto */
-    text-decoration: none; /* Elimina el subrayado */
+    background-color: #007BFF; /* Fondo azul */
+    border-radius: 12px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     margin-bottom:50px;
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
-    font-family: 'Open Sans', sans-serif; /* Cambia la fuente a Open Sans */
-    color: #888888;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF; /* Texto blanco */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Añade una transición suave al transform y opacity */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Añade una sombra */
+}
 
-
-  }
+.button:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del botón */
+    opacity: 0.8; /* Hace el botón más opaco */
+}
 
 
 
@@ -343,4 +354,24 @@ object-fit: cover;
   object-fit: cover;
   }
 
+  .responsive-iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Proporción 16:9 */
+    width: 100%;
+     /* Agrega un padding alrededor del iframe */
+  }
   
+  .responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .responsive-iframe-container {
+      padding-top: 75%; /* Proporción 4:3 para pantallas más pequeñas */
+    }
+  }

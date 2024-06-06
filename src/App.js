@@ -8,6 +8,16 @@ import NuestroEscenario from './pages/NuestroEscenario';
 import ReconociendoEmociones from './pages/ReconociendoEmociones';
 import RinconOcio from './pages/RinconOcio';
 import imagen from './Images/fondo-home.jpg';
+import Podcast from './pages/Podcast';
+import Musica from './pages/Musica';
+import MundoArcade from './pages/MundoArcade';
+import NotasMagicas from './pages/NotasMagicas';
+import Moviemania from './pages/Moviemania';
+import JardinLiterario from './pages/JardinLiterario';
+import ValledeCharlas from './pages/ValledeCharlas';
+import VideosDiarios from './pages/VideosDiarios';
+import ValleEnMiniatura from './pages/ValleEnMiniatura';
+import Fotogaleria from './pages/Fotogaleria';
 
 
 //commit test
@@ -28,13 +38,14 @@ function App() {
 
 
         <nav>
-          <ul className='barra-navegacion' style={{ display: 'flex', gap: '10px' }}>
-            <li><Link to="/">inicio</Link></li>
+          <ul className='barra-navegacion'>
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/reconociendo-emociones">Reconociendo Emociones</Link></li>
             <li><Link to="/rincon-ocio">Rincón de Ocio</Link></li>
             <li><Link to="/nuestro-escenario">Nuestro Escenario</Link></li>
           </ul>
         </nav>
+        
       
     </header>
 
@@ -45,6 +56,17 @@ function App() {
     <Route path="/reconociendo-emociones" component={ReconociendoEmociones} />
     <Route path="/rincon-ocio" component={RinconOcio} />
     <Route path="/nuestro-escenario" component={NuestroEscenario} />
+    <Route path="/podcast" component={Podcast} /> {/* Agrega la ruta para el componente Podcast */}
+    <Route path="/musica" component={Musica} /> {/* Agrega la ruta para el componente Musica */}
+    <Route path="/mundo-arcade" component={MundoArcade} /> {/* Agrega la ruta para el componente ReconociendoEmociones */}
+    <Route path="/notas-magicas" component={NotasMagicas} /> {/* Agrega la ruta para el componente NuestroEscenario */}
+    <Route path="/moviemania" component={Moviemania} /> {/* Agrega la ruta para el componente RinconOcio */}
+    <Route path="/jardin-literario" component={JardinLiterario} /> {/* Agrega la ruta para el componente Podcast */}
+    <Route path="/valle-de-charlas" component={ValledeCharlas} /> {/* Agrega la ruta para el componente Musica */}
+    <Route path="/videos-diarios" component={VideosDiarios} /> {/* Agrega la ruta para el componente VideosDiarios */}
+    <Route path="/valle-en-miniatura" component={ValleEnMiniatura} /> {/* Agrega la ruta para el componente ValleEnMiniatura */}
+    <Route path="/fotogaleria" component={Fotogaleria} /> {/* Agrega la ruta para el componente Fotogaleria */}
+
   </div>
   <footer>
     <div className="cuerpo-blog" style={{ backgroundImage: `url(${imagen})` }}>
