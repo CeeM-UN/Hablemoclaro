@@ -19,6 +19,7 @@ import VideosDiarios from './pages/VideosDiarios';
 import ValleEnMiniatura from './pages/ValleEnMiniatura';
 import Fotogaleria from './pages/Fotogaleria';
 import SentimientosEnActo from './pages/SentimientosEnActo';
+import footer from './Images/footer.png';
 
 
 //commit test
@@ -72,7 +73,7 @@ function App() {
 
   </div>
   <footer>
-    <div className="cuerpo-blog" style={{ backgroundImage: `url(${imagen})` }}>
+    <div className="cuerpo-blog" style={{ backgroundImage: `url(${footer})` }}>
     <div className='footer'><p>© 2024 Proyecto USTA. Luna Nicolle Corpus Gomez - Vannesa Ortega - Yulixa Yuliana Ruiz Rubio.</p>
     <p>Universidad Santo Tomás, Estudiantes de Comunicación Social</p>
     </div>

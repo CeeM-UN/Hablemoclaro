@@ -20,6 +20,7 @@ function Home() {
 
       <div className="cuerpo-blog" style={{ backgroundImage: `url(${background})` }}>
       <div className="text-container">Aquí encontrarás diferentes actividades que como estudiantes de comunicación social, de sexto semestre de la universidad Santo Tomás, hemos venido realizando en conjunto con los estudiantes del grado 11 del colegio Antonio García I.E.D de Ciudad Bolívar, localidad número 19 del Distrito Capital de Bogotá ubicada en el sur de la ciudad; con el fin de explorar los profundos mares de emociones  del mundo interno que navegamos como personas. </div> {/* Nuevo elemento */}
+      <div className="cuerpo-blogn" style={{ backgroundImage: `url(${imagen})` }}>
       <div className="centered-text1">Emoti y sus desenfrenadas emociones</div> {/* Nuevo elemento */}
       <div className="contact-line"></div> {/* Línea centrada debajo del texto */}
       <div className="blank"></div> {/* Línea centrada debajo del texto */}
@@ -30,7 +31,7 @@ function Home() {
       </div>
       <div className="blank"></div> {/* Línea centrada debajo del texto */}
       <button className="button">Para continuar viendo la historia de Emoti da click aquí!</button> {/* Botón centrado */}
-    
+      </div>
     </div>
 
     <div className="background-container">

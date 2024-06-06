@@ -80,7 +80,8 @@ return (
         </a>
         </div>
         
-        <div className="cuerpo-blogn" style={{ backgroundImage: `url(${imagen})` }}>
+      </div>
+      <div className="cuerpo-blogn" style={{ backgroundImage: `url(${imagen})` }}>
             <div className='container-ocio'>
                 <div className='section-ocio'>
                     <div><img src={proximo} alt="proximo paso" className="imagenes-inicio"></img></div>
@@ -96,7 +97,6 @@ return (
             </div>
     
         </div>
-      </div>
     </div>
 );
 }
