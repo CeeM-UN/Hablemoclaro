@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import NuestroEscenario from './pages/NuestroEscenario';
 import ReconociendoEmociones from './pages/ReconociendoEmociones';
 import RinconOcio from './pages/RinconOcio';
-import imagen from './Images/fondo-home.jpg';
+
 import Podcast from './pages/Podcast';
 import Musica from './pages/Musica';
 import MundoArcade from './pages/MundoArcade';
