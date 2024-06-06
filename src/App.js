@@ -18,6 +18,7 @@ import ValledeCharlas from './pages/ValledeCharlas';
 import VideosDiarios from './pages/VideosDiarios';
 import ValleEnMiniatura from './pages/ValleEnMiniatura';
 import Fotogaleria from './pages/Fotogaleria';
+import SentimientosEnActo from './pages/SentimientosEnActo';
 
 
 //commit test
@@ -41,6 +42,7 @@ function App() {
           <ul className='barra-navegacion'>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/reconociendo-emociones">Reconociendo Emociones</Link></li>
+            <li><Link to="/sentimientos-en-acto">Sentimientos en acto</Link></li>
             <li><Link to="/rincon-ocio">Rincón de Ocio</Link></li>
             <li><Link to="/nuestro-escenario">Nuestro Escenario</Link></li>
           </ul>
@@ -54,6 +56,7 @@ function App() {
     {/* Aquí es donde se renderizarán tus componentes de página */}
     <Route path="/" exact component={Home} />
     <Route path="/reconociendo-emociones" component={ReconociendoEmociones} />
+    <Route path="/sentimientos-en-acto" component={SentimientosEnActo} />
     <Route path="/rincon-ocio" component={RinconOcio} />
     <Route path="/nuestro-escenario" component={NuestroEscenario} />
     <Route path="/podcast" component={Podcast} /> {/* Agrega la ruta para el componente Podcast */}
