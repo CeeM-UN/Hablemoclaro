@@ -22,6 +22,8 @@ import SentimientosEnActo from './pages/SentimientosEnActo';
 import footer from './Images/footer.png';
 
 
+
+
 //commit test
 
 // Importando los estilos
@@ -76,23 +78,39 @@ function App() {
  
       <div className="footer" style={{ backgroundImage: `url(${footer})` }}>
         
-          <p>© 2024 Proyecto USTA. Luna Nicolle Corpus Gomez - Vannesa Ortega - Yulixa Yuliana Ruiz Rubio.</p>
+          <p>© 2024 Proyecto USTA. Luna Nicolle Corpus Gomez - Vannesa Ortega - Yulixa Yuliana Ruiz Rubio. - Lauren Sofia Leon</p>
           <p>Universidad Santo Tomás, Estudiantes de Comunicación Social</p>
+          <p>Bogotá - Colombia</p>
 
-          <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center' }}>
-            <a href="https://www.instagram.com/hablemos_claro11/?igsh=cTU3bTBhcGRhZHJy&utm_source=qr" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', border: 0, width: 18, height: 18, padding: 2, margin: 5, color: '#ffffff', borderRadius: '35%', backgroundColor: '#3d3d3d' }}>
-              <svg className="niftybutton-instagram" style={{ display: 'block', fill: 'currentColor' }} data-donate="true" data-tag="ins" data-name="Instagram" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
-                <title>Instagram social icon</title>
-                {/* Aquí irían los elementos <path> y <circle> del SVG */}
-              </svg>
-            </a>
-            <a href="https://www.youtube.com/channel/UCAEewNxj93lt7xIwjBLyg5w" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', border: 0, width: 18, height: 18, padding: 2, margin: 5, color: '#ffffff', borderRadius: '35%', backgroundColor: '#3d3d3d' }}>
-              <svg className="niftybutton-youtube" style={{ display: 'block', fill: 'currentColor' }} data-donate="true" data-tag="you" data-name="YouTube" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
-                <title>YouTube social icon</title>
-                {/* Aquí irían los elementos <path> del SVG */}
-              </svg>
-            </a>
-          </div>
+          <div className="wrapper">
+          <a href="https://www.instagram.com/hablemos_claro11/?igsh=cTU3bTBhcGRhZHJy&utm_source=qr " className="icon instagram">
+
+            <div className="icon instagram">
+              <span className="tooltip">Instagram</span>
+              <span><i className="fab fa-instagram"></i></span>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/channel/UCAEewNxj93lt7xIwjBLyg5w" className="icon youtube">
+
+            <div className="icon youtube">
+              <span className="tooltip">Youtube</span>
+              <span><i className="fab fa-youtube"></i></span>
+            </div>
+          </a>
+          <a href="https://forms.gle/ioeTx9WzydkcmetV6" className="icon docs">
+            <div className="icon docs">
+              <span className="tooltip">Forms</span>
+              <span><i className="fa-regular fa-file"></i></span>
+            </div>
+          </a>
+          <a href="https://forms.gle/aSEMwxUiJMTsFoj4A" className="icon docs">
+            <div className="icon docs">
+              <span className="tooltip">Forms</span>
+              <span><i className="fa-regular fa-file"></i></span>
+            </div>
+          </a>
+          
+          </div>  
         </div>
 
     </footer>
