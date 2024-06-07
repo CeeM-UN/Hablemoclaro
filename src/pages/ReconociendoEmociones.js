@@ -9,8 +9,7 @@ import imagen from '../Images/fondo-home.jpg';
 function Home() {
   return (
     <div className="Home">
-      <div className="image-container">
-        <img src={logo} alt="Imagen reconociendo emociones" className="blog-image" />
+      <div className="image-container" style={{logo}}>
         <div className="centered-text">Reconociendo Emociones </div>
       </div>
   
