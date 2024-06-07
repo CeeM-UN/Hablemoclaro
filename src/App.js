@@ -22,6 +22,8 @@ import SentimientosEnActo from './pages/SentimientosEnActo';
 import footer from './Images/footer.png';
 
 
+
+
 //commit test
 
 // Importando los estilos
@@ -73,14 +75,48 @@ function App() {
 
   </div>
   <footer>
-    <div className="cuerpo-blog" style={{ backgroundImage: `url(${footer})` }}>
-    <div className='footer'><p>© 2024 Proyecto USTA. Luna Nicolle Corpus Gomez - Vannesa Ortega - Yulixa Yuliana Ruiz Rubio.</p>
-    <p>Universidad Santo Tomás, Estudiantes de Comunicación Social</p>
-    </div>
-    </div>
+ 
+      <div className="footer" style={{ backgroundImage: `url(${footer})` }}>
+        
+          <p>© 2024 Proyecto USTA. Luna Nicolle Corpus Gomez - Vannesa Ortega - Yulixa Yuliana Ruiz Rubio. - Lauren Sofia Leon</p>
+          <p>Universidad Santo Tomás, Estudiantes de Comunicación Social</p>
+          <p>Bogotá - Colombia</p>
+
+          <div className="wrapper">
+          <a href="https://www.instagram.com/hablemos_claro11/?igsh=cTU3bTBhcGRhZHJy&utm_source=qr " className="icon instagram">
+
+            <div className="icon instagram">
+              <span className="tooltip">Instagram</span>
+              <span><i className="fab fa-instagram"></i></span>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/channel/UCAEewNxj93lt7xIwjBLyg5w" className="icon youtube">
+
+            <div className="icon youtube">
+              <span className="tooltip">Youtube</span>
+              <span><i className="fab fa-youtube"></i></span>
+            </div>
+          </a>
+          <a href="https://forms.gle/ioeTx9WzydkcmetV6" className="icon docs">
+            <div className="icon docs">
+              <span className="tooltip">Forms</span>
+              <span><i className="fa-regular fa-file"></i></span>
+            </div>
+          </a>
+          <a href="https://forms.gle/aSEMwxUiJMTsFoj4A" className="icon docs">
+            <div className="icon docs">
+              <span className="tooltip">Forms</span>
+              <span><i className="fa-regular fa-file"></i></span>
+            </div>
+          </a>
+          
+          </div>  
+        </div>
+
     </footer>
 </Router> 
   );
 }
 
 export default App;
+

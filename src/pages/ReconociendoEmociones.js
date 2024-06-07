@@ -5,12 +5,13 @@ import logo from '../Images/Reconociendo_emociones_banner.png'; // Importa la im
 import background from '../Images/17ib2g.png';
 import flecha_fondo from '../Images/22dpwz.png';
 import imagen from '../Images/fondo-home.jpg';
+const Titulo = ({ children }) => <h2 className="titulo">{children}</h2>;
+const Texto = ({ children }) => <p className="texto">{children}</p>;
 
 function Home() {
   return (
     <div className="Home">
       <div className="image-container">
-        <img src={logo} alt="Imagen reconociendo emociones" className="blog-image" />
         <div className="centered-text">Reconociendo Emociones </div>
       </div>
   
@@ -19,23 +20,34 @@ function Home() {
        <p>Te dejamos varios tips que te pueden ayudar, no solo en el entorno escolar sino que en cualquier entorno.</p>
        </div> {/* Nuevo elemento */}
     <img src={flecha_fondo} alt="flecha" className="flecha" />
-    <table border="0" className='tablita'>
-     <tr>
-      <td><h2>Relaciones Interpersonales</h2><p>La habilidad de reconocer y comprender las emociones de los demás facilita las relaciones interpersonales positivas. Las personas que son capaces de identificar las emociones de sus compañeros pueden establecer relaciones más sólidas y empáticas.</p></td>
-      <td><h2>Resolucion de Conflictos</h2><p>El reconocimiento de emociones es esencial para resolver conflictos de manera constructiva. Las personas que pueden identificar y expresar sus emociones de manera adecuada tienen más probabilidades de encontrar soluciones pacíficas a los conflictos interpersonales.</p></td>
-     </tr>
-     <tr>
-      <td><h2>Bienestar Mental</h2><p>La capacidad de reconocer y gestionar las emociones está estrechamente relacionada con el bienestar mental. Las personas que son conscientes de sus propias emociones y saben cómo manejarlas tienen menos probabilidades de experimentar problemas de salud mental como la ansiedad y la depresión.</p></td>
-      <td><h2>Rendimiento Acádemico</h2><p>Las emociones juegan un papel importante en el rendimiento académico de los estudiantes. Los adolescentes que son capaces de regular sus emociones tienen más probabilidades de mantenerse enfocados y motivados en sus estudios, lo que puede conducir a un mejor desempeño académico.</p></td>
-     </tr>
-    </table>
+    <div className='container1'>
+        <div>
+            <Titulo>Relaciones Interpersonales</Titulo>
+            <Texto>La habilidad de reconocer y comprender las emociones de los demás facilita las relaciones interpersonales positivas. Las personas que son capaces de identificar las emociones de sus compañeros pueden establecer relaciones más sólidas y empáticas.</Texto>
+        </div>
+        <div>
+            <Titulo>Resolucion de Conflictos</Titulo>
+            <Texto>El reconocimiento de emociones es esencial para resolver conflictos de manera constructiva. Las personas que pueden identificar y expresar sus emociones de manera adecuada tienen más probabilidades de encontrar soluciones pacíficas a los conflictos interpersonales.</Texto>
+        </div>
+        <div>
+            <Titulo>Bienestar Mental</Titulo>
+            <Texto>La capacidad de reconocer y gestionar las emociones está estrechamente relacionada con el bienestar mental. Las personas que son conscientes de sus propias emociones y saben cómo manejarlas tienen menos probabilidades de experimentar problemas de salud mental como la ansiedad y la depresión.</Texto>
+        </div>
+        <div>
+            <Titulo>Rendimiento Acádemico</Titulo>
+            <Texto>Las emociones juegan un papel importante en el rendimiento académico de los estudiantes. Los adolescentes que son capaces de regular sus emociones tienen más probabilidades de mantenerse enfocados y motivados en sus estudios, lo que puede conducir a un mejor desempeño académico.</Texto>
+        </div>
+        </div>  
     </div>  
 <div className="cuerpo-blogn" style={{ backgroundImage: `url(${imagen})` }}>
 <div className="text-container2">Emoti y sus desenfrenadas emociones</div> {/* Nuevo elemento */}
       <div className="contact-line"></div> {/* Línea centrada debajo del texto */}
       <p>Parte II</p>
       <div className="blank"></div> {/* Línea centrada debajo del texto */}
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/wQEVrlGGZOE?si=DeNUM8whT0sPxLKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div className="responsive-iframe-container">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wQEVrlGGZOE?si=DeNUM8whT0sPxLKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       <div className="blank"></div> {/* Línea centrada debajo del texto */}
       <button className="button">Para continuar viendo la historia de Emoti da click aquí!</button> {/* Botón centrado */}
       </div>

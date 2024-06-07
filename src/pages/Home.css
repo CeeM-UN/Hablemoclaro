@@ -3,7 +3,24 @@
 .image-container {
   position: relative;
   width: 100%;
+  height: 100vh; /* Ajusta esto a la altura que prefieras */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.image-container::before {
+    content: "";
+    background: url('../Images/imagenlogo.png') no-repeat center center/cover; /* Asegúrate de reemplazar esto con la ruta correcta a tu imagen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5; /* Ajusta esto al nivel de opacidad que prefieras */
+    z-index: -1;
+}
+
 
 .image-container::after {
   content: "";
@@ -24,16 +41,16 @@
 }
 
 .blog-image {
-  width: 100%;
+  width: 100;
   height: 100%;
   display: block;
 
 }
 
 .centered-text {
-  position: absolute;
-  top: 0;
-  left: 0;
+
+  position: relative;
+  padding: 2em; /* Ajusta esto al tamaño que prefieras */
   width: 100%;
   height: 100%;
   display: flex;
@@ -44,23 +61,21 @@
   z-index: 3;
   font-family: 'PT Serif', serif;
   font-weight: bold;
-    /* el resto de tus estilos */
-  }
-  .centered-text1 {
-    width: 100%;
-    height: 100%;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #536566;
-    font-size: 3.5rem;
-    z-index: 3;
-    font-family: 'PT Serif', serif;
-    font-weight: bold;
-    opacity: 0; /* Inicia la animación con el texto invisible */
-    animation: fadeIn 2s ease-in-out forwards; /* Aplica la animación de fade in */
-    margin: auto; /* Centra el texto */
+}
+.centered-text1 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-size: 7vw; /* Cambia a una unidad relativa al ancho de la ventana del navegador */
+  z-index: 3;
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+  opacity: 0; /* Inicia la animación con el texto invisible */
+  animation: fadeIn 2s ease-in-out forwards; /* Aplica la animación de fade in */
+  margin: auto; /* Centra el texto */
 }
 
 @keyframes fadeIn {
@@ -97,6 +112,23 @@
   padding: 3% 10%; /* Aumenta el padding vertical a 50px y mantiene el padding horizontal en 20px */
   font-weight: lighter;
   font-size: 1.2em; /* Ajusta el tamaño de la fuente a 1.2em */
+}
+
+.iframeAnimat {
+  font-family: 'Open Sans', sans-serif;
+  color: #888888;
+  text-align: center;
+  padding: 3% 10%;
+  font-weight: lighter;
+  font-size: 1.2em;
+  opacity: 0; /* Inicia con el elemento invisible */
+  animation: fadeIn 2s ease-in-out forwards; /* Aplica la animación de fade in */
+  animation-delay: 1s; /* Añade un retraso antes de que comience la animación */
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
   .text-container2 {
     font-family: 'PT Serif', serif;
@@ -163,33 +195,51 @@
 
 
 
+.home {
+  background-color: #000000; /* Fondo gris claro */
+  font-family: 'Open Sans', sans-serif; /* Cambia la fuente a Open Sans */
+  color: #888888; /* Cambia el color a #888888 */
+  text-align: center; /* Centra el texto */
+  padding: 3% 10%; /* Aumenta el padding vertical a 50px y mantiene el padding horizontal en 20px */
+  font-weight: lighter;
+  font-size: 1.2em; /* Ajusta el tamaño de la fuente a 1.2em */
+}
 
 
-  .cuerpo-blog{
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center;
-    background-size: 15%;
-    height: auto;
-    width: 100%;
-    padding-bottom: 5%;
-  }
 
-  .cuerpo-blogn{
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center;
-    background-size: 35%;
-    height: auto;
-    width: 100%;
-    padding-bottom: 5%;
-  }
+.cuerpo-blog {
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 15%;
+  height: auto;
+  width: 60%;
+  padding: 5%; /* Esto añade el mismo padding en la parte superior e inferior */
+  margin: 2% auto; /* Esto añade un margen alrededor del elemento */
+  border: 2px solid #000; /* Ajusta el color y el tamaño del borde según tus necesidades */
+  border-radius: 10px; /* Esto hace que los bordes sean redondeados */
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75); /* Esto añade un desenfoque oscuro alrededor del elemento para que sobresalga */
+  background-image: "/src/Images/17ib2g.png";
+}
 
-  .cuerpo-blogn p{
+.cuerpo-blogn {
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 35%;
+  height: auto;
+  width: 70%;
+  padding: 10%; /* Esto añade el mismo padding en la parte superior e inferior */
+  margin: 1% auto;
+  border-radius: 10px; /* Esto hace que los bordes sean redondeados */
+}
+
+  .cuerpo-blogn p {
     color: white;
     font-family: 'PT Serif', serif;
     font-size: 1.5em;
-  }
+    overflow-wrap: break-word; /* Esto hace que las palabras que son demasiado largas para caber en su contenedor se rompan */
+}
   .flecha{
     width: 7%;
     height: 7%;
@@ -209,18 +259,20 @@
   th, td {
     font-family: 'Open Sans', sans-serif;
     padding: 10px;
-    text-align: left;
+    text-align: justify;
    
     color: black;
     font-size: 1em; 
   }
-  td h2{
-    color: #596b6c;
-  }
+td h2 {
+    color: #000000; /* Cambia el color a negro */
+    font-size: 2vw; /* Cambia el tamaño de la fuente a 2.5% del ancho de la ventana del navegador */
+    overflow-wrap: break-word; /* Asegura que el texto no se salga de su contenedor */
+}
   td p{
     color: #7a7a7a;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em; 
+    font-size: 3vw; 
   }
   .tc{
     width: 55%;
@@ -228,6 +280,37 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    font-family: 'Open Sans', sans-serif; /* Cambia la fuente a Open Sans */
+    color: #888888; /* Cambia el color a #888888 */
+    text-align: center; /* Centra el texto */
+    padding: 3% 10%; /* Aumenta el padding vertical a 50px y mantiene el padding horizontal en 20px */
+    font-weight: lighter;
+    font-size: 1.2em;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container1 {
+      grid-template-columns: 1fr; /* Cambia a una sola columna cuando el ancho de la ventana del navegador es 768px o menos */
+    }
+  }
+
+.containerrecoEmo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  overflow-wrap: break-word; /* Añade esta línea */
+}
+
+@media screen and (max-width: 768px) {
+  .containerrecoEmo {
+    grid-template-columns: 1fr; /* Cambia a una sola columna cuando el ancho de la ventana del navegador es 768px o menos */
+  }
+}
 
   .container {
     max-width: 800px;
@@ -372,7 +455,12 @@ h1 {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
- 
+}
+
+@media screen and (max-width: 768px) {
+  .container-nuestroescenario {
+    grid-template-columns: auto; /* Cambia a una sola columna cuando el ancho de la ventana del navegador es 768px o menos */
+  }
 }
 
 .section-nuestroescenario {
@@ -387,7 +475,7 @@ h1 {
   text-align: center;
   font-weight: normal;
   color: #586a6b;
-  font-size: 1.9em;
+  font-size: 2vw;
 }
 
 .imagenes-nuestroescenario{
@@ -474,3 +562,91 @@ object-fit: cover;
       padding-top: 75%; /* Proporción 4:3 para pantallas más pequeñas */
     }
   }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-items: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    list-style: none;
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+  @media (max-width: 600px) {
+    .wrapper {
+      grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #000; /* Cambia el color de fondo a negro */
+    border-radius: 50%;
+    padding: 15px;
+    margin: 18px;
+    width: 20px; /* Reduce el ancho */
+    height: 20px; /* Reduce la altura */
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  }
+  .wrapper .tooltip {
+    position: absolute;
+    top: 8px;
+    font-size: 14px;
+    background: #fff;
+    color: #000000;
+    padding: 5px 8px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+  }
+
+  .wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff00;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 8px rgba(0,0,0,0.1);
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip {
+  background: #FF00FF;
+  color: #fff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip {
+  background: #ff0000;
+  color: #fff;
+}
+
+.wrapper .form:hover,
+.wrapper .form:hover .tooltip {
+  background: #00acee;
+  color: #fff;
+}
+
+

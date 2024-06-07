@@ -52,7 +52,7 @@
 }
 
 .barra-navegacion li:hover {
-  transform: scale(1.1); /* Aumenta el tamaño del texto en un 10% cuando el mouse está sobre él */
+  transform: scale(1.07); /* Aumenta el tamaño del texto en un 10% cuando el mouse está sobre él */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade una sombra debajo del texto */
 }
 
